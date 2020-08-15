@@ -65,6 +65,17 @@ RPrismFormula = tk.Label(text = 'V = l x w x h')
 PrismFormula = tk.Label(text = 'V = b × h')
 CubeFormula = tk.Label(text = 'V = s^3')
 
+areaSqForm = tk.Label(text = 'A = l^2')
+areaRectForm = tk.Label(text = 'A = w x h')
+areaTriForm = tk.Label(text = 'A = (b x h) / 2')
+areaRhomForm = tk.Label(text = 'A = (D x d) / 2')
+areaTrapForm = tk.Label(text = 'A = (B + b) / 2 x h')
+areaPolyForm = tk.Label(text = 'A = P / 2 x a')
+areaCircleForm = tk.Label(text = 'A = r^2\nP = 2r')
+areaConeForm = tk.Label(text = 'A = w x h')
+areaSphereForm = tk.Label(text = 'A = w x h')
+
+
 def ifDoneVolButtonClick():
     SphereFormula.pack_forget()
     PyrandConeFormula.pack_forget()
@@ -361,6 +372,19 @@ def ifGeoEqEllipseClick():
     geoEqSphereButton.pack_forget()
     geoEqEllipseButton.pack_forget()
     doneGeoButton.pack()
+
+def ifAreaSqClick():
+    areaSq.pack_forget()
+    areaRect.pack_forget()
+    areaTri.pack_forget()
+    areaRhom.pack_forget()
+    areaPoly.pack_forget()
+    areaCircle.pack_forget()
+    areaCone.pack_forget()
+    areaSphere.pack_forget()
+
+
+
 def ifTrig1ButtonClick():
     trigButton.pack_forget()
     trig1Button.pack_forget()
@@ -423,6 +447,15 @@ geoEqPlaneButton = tk.Button(text = 'Equation of a Plane', height = 4, width = 3
 geoEqCircleButton = tk.Button(text = 'Equation of a Circle', height = 4, width = 30, command = ifGeoEqCircleClick)
 geoEqSphereButton = tk.Button(text = 'Equation of a Sphere', height = 4, width = 30, command = ifGeoEqSphereClick)
 geoEqEllipseButton = tk.Button(text = 'Equation of an Ellipse', height = 4, width = 30, command = ifGeoEqEllipseClick)
+areaSq = tk.Button(text = 'Area of a Square', height = 4, width = 30, command = ifGeoEqEllipseClick)
+areaRect = tk.Button(text = 'Area of a Rectangle', height = 4, width = 30, command = ifGeoEqEllipseClick)
+areaTri = tk.Button(text = 'Area of a Triangle', height = 4, width = 30, command = ifGeoEqEllipseClick)
+areaRhom = tk.Button(text = 'Area of a Rhombus', height = 4, width = 30, command = ifGeoEqEllipseClick)
+areaTrap = tk.Button(text = 'Area of a Trapezoid', height = 4, width = 30, command = ifGeoEqEllipseClick)
+areaPoly = tk.Button(text = 'Area of a Regular Polygon', height = 4, width = 30, command = ifGeoEqEllipseClick)
+areaCircle = tk.Button(text = 'Area of a Circle', height = 4, width = 30, command = ifGeoEqEllipseClick)
+areaCone = tk.Button(text = 'Area of a Cone', height = 4, width = 30, command = ifGeoEqEllipseClick)
+areaSphere = tk.Button(text = 'Area of a Sphere', height = 4, width = 30, command = ifGeoEqEllipseClick)
 trig1Button = tk.Button(text = 'Trigonometry Part 1', height = 4, width = 30, command = ifTrig1ButtonClick)
 trig2Button = tk.Button(text = 'Trigonometry Part 2', height = 4, width = 30, command = ifTrig2ButtonClick)
 trig3Button = tk.Button(text = 'Trigonometry Part 3', height = 4, width = 30, command = ifTrig3ButtonClick)
