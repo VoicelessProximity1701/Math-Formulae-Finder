@@ -530,11 +530,11 @@ trigButton = tk.Button(text = "Trigonometry", height = 4, width = 30, command = 
 menuEntry = tk.Button(text = "Menu", height = 4, width = 30, command = ifMenuClick)
 menuEntry.pack()
 
-startButton = tk.Button(text = "Start", height = 4, width = 30, command = ifStartClick)
-startButton.pack()
-
 workingOut = tk.Button(text = 'Working Out', height = 4, width = 30, command = ifWorkingOutClick)
 workingOut.pack()
+
+startButton = tk.Button(text = "Start", height = 4, width = 30, command = ifStartClick)
+startButton.pack()
 
 parent.mainloop()
 
