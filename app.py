@@ -40,10 +40,12 @@ trig1img = tk.PhotoImage(file = '/Volumes/Samsung T5/Math Formulae Finder/images
 trig2img = tk.PhotoImage(file = '/Volumes/Samsung T5/Math Formulae Finder/images/trig2.png')
 trig3img = tk.PhotoImage(file = '/Volumes/Samsung T5/Math Formulae Finder/images/trig3.png')
 expoimg = tk.PhotoImage(file = '/Volumes/Samsung T5/Math Formulae Finder/images/expo.png')
+radicalimg = tk.PhotoImage(file = '/Volumes/Samsung T5/Math Formulae Finder/images/radical.png')
 trig1imgpic = tk.Button(image = trig1img)
 trig2imgpic = tk.Button(image = trig2img)
 trig3imgpic = tk.Button(image = trig3img)
 expoimgpic = tk.Button(image = expoimg)
+radicalimgpic = tk.Button(image = radicalimg)
 geoEulerImgPic = tk.Button(image = geoEulerImg)
 geoEqCircleImgPic = tk.Button(image = geoEqCircleImg)
 geoDistTwoPtsImgPic = tk.Button(image = geoDistTwoPtsImg)
@@ -132,10 +134,23 @@ def ifDoneExpoClick():
     trigButton.pack()
     expoButton.pack()
 
+def ifDoneRadClick():
+    radicalimgpic.pack_forget()
+    doneRadButton.pack_forget()   
+    volumeButton.pack()
+    geoButton.pack()
+    funcandEqButton.pack()
+    areaButton.pack()
+    netButton.pack()
+    trigButton.pack()
+    expoButton.pack()
+
 doneVolButton = tk.Button(text = 'Done', height = 4, width = 30, command = ifDoneVolButtonClick)
 doneGeoButton = tk.Button(text = 'Done', height = 4, width = 30, command = ifDoneGeoButtonClick)
 DoneTrigButton = tk.Button(text = 'Done', height = 4, width = 30, command = ifDoneTrigButtonClick)
 doneExpoButton = tk.Button(text = 'Done', height = 4, width = 30, command = ifDoneExpoClick)
+doneRadButton = tk.Button(text = 'Done', height = 4, width = 30, command = ifDoneRadClick)
+
 
 def ifVolSphereClick():
     SphereFormula.pack()
@@ -379,6 +394,18 @@ def ifExpoButtonClick():
     doneExpoButton.pack()
     expoimgpic.pack()
 
+def ifRadButtonClick():
+    volumeButton.pack_forget()
+    geoButton.pack_forget()
+    funcandEqButton.pack_forget()
+    areaButton.pack_forget()
+    netButton.pack_forget()
+    trigButton.pack_forget()
+    expoButton.pack_forget()
+    radButton.pack_forget()
+    doneRadButton.pack()
+    radicalimgpic.pack()
+
 volSphere = tk.Button(text = 'The Volume of a Sphere', height = 4, width = 30, command = ifVolSphereClick)
 volPyrandCone = tk.Button(text = "The Volume of a Pyramid/Cone", height = 4, width = 30, command = ifVolPyrandConeClick)
 volPrism = tk.Button(text = "The Volume of a Prism", height = 4, width = 30, command = ifVolPrismClick)
@@ -399,7 +426,6 @@ geoEqEllipseButton = tk.Button(text = 'Equation of an Ellipse', height = 4, widt
 trig1Button = tk.Button(text = 'Trigonometry Part 1', height = 4, width = 30, command = ifTrig1ButtonClick)
 trig2Button = tk.Button(text = 'Trigonometry Part 2', height = 4, width = 30, command = ifTrig2ButtonClick)
 trig3Button = tk.Button(text = 'Trigonometry Part 3', height = 4, width = 30, command = ifTrig3ButtonClick)
-expoButton = tk.Button(text = 'Exponents', height = 4, width = 30, command = ifExpoButtonClick)
 
 def ifMenuClick():
     volumeButton.pack_forget()
@@ -438,6 +464,7 @@ def ifMenuClick():
     netButton.pack()
     trigButton.pack()
     expoButton.pack()
+    radButton.pack()
 
 def ifStartClick():
     volumeButton.pack()
@@ -447,6 +474,7 @@ def ifStartClick():
     netButton.pack()
     trigButton.pack()
     expoButton.pack()
+    radButton.pack()
     startButton.pack_forget()
 
 def ifVolumeClick():
@@ -532,6 +560,8 @@ funcandEqButton = tk.Button(text = "Functions and Equations", height = 4, width 
 areaButton = tk.Button(text = "Area", height = 4, width = 30, command = ifAreaClick)
 netButton = tk.Button(text = "Nets", height = 4, width = 30, command = ifNetClick)
 trigButton = tk.Button(text = "Trigonometry", height = 4, width = 30, command = ifTrigClick)
+expoButton = tk.Button(text = 'Exponents', height = 4, width = 30, command = ifExpoButtonClick)
+radButton = tk.Button(text = 'Radicals', height = 4, width = 30, command = ifRadButtonClick)
 
 menuEntry = tk.Button(text = "Menu", height = 4, width = 30, command = ifMenuClick)
 menuEntry.pack()
