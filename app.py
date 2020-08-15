@@ -12,7 +12,6 @@ formulaeUsage = tk.Label(text = "Usage: Click your formula's category to find it
 formulaeUsage.pack()
 
 exitFormCalc = tk.Button(text = 'Exit', height = 4, width = 30, command = exit)
-exitFormCalc.pack()
 
 volPyrandConePicImg = tk.PhotoImage(file = '/Volumes/Samsung T5/Math Formulae Finder/images/cone.png')
 volCylinderPicImg = tk.PhotoImage(file = '/Volumes/Samsung T5/Math Formulae Finder/images/cylinder.png')
@@ -535,6 +534,8 @@ workingOut.pack()
 
 startButton = tk.Button(text = "Start", height = 4, width = 30, command = ifStartClick)
 startButton.pack()
+
+exitFormCalc.pack()
 
 parent.mainloop()
 
