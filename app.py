@@ -40,9 +40,11 @@ funcandEqImg = tk.PhotoImage(file = '/Volumes/Samsung T5/Math Formulae Finder/im
 trig1img = tk.PhotoImage(file = '/Volumes/Samsung T5/Math Formulae Finder/images/trig1.png')
 trig2img = tk.PhotoImage(file = '/Volumes/Samsung T5/Math Formulae Finder/images/trig2.png')
 trig3img = tk.PhotoImage(file = '/Volumes/Samsung T5/Math Formulae Finder/images/trig3.png')
+expoimg = tk.PhotoImage(file = '/Volumes/Samsung T5/Math Formulae Finder/images/expo.png')
 trig1imgpic = tk.Button(image = trig1img)
 trig2imgpic = tk.Button(image = trig2img)
 trig3imgpic = tk.Button(image = trig3img)
+expoimgpic = tk.Button(image = expoimg)
 geoEulerImgPic = tk.Button(image = geoEulerImg)
 geoEqCircleImgPic = tk.Button(image = geoEqCircleImg)
 geoDistTwoPtsImgPic = tk.Button(image = geoDistTwoPtsImg)
@@ -119,11 +121,15 @@ def ifDoneTrigButtonClick():
     trig2Button.pack()
     trig3Button.pack()
     DoneTrigButton.pack_forget()
-    
+
+def ifDoneExpoClick():
+    expoimgpic.pack_forget()
+    doneExpoButton.pack_forget()   
 
 doneVolButton = tk.Button(text = 'Done', height = 4, width = 30, command = ifDoneVolButtonClick)
 doneGeoButton = tk.Button(text = 'Done', height = 4, width = 30, command = ifDoneGeoButtonClick)
 DoneTrigButton = tk.Button(text = 'Done', height = 4, width = 30, command = ifDoneTrigButtonClick)
+doneExpoButton = tk.Button(text = 'Done', height = 4, width = 30, command = ifDoneExpoClick)
 
 def ifVolSphereClick():
     SphereFormula.pack()
@@ -356,6 +362,17 @@ def ifTrig3ButtonClick():
     DoneTrigButton.pack()
     trig3imgpic.pack()
 
+def ifExpoButtonClick():
+    volumeButton.pack_forget()
+    geoButton.pack_forget()
+    funcandEqButton.pack_forget()
+    areaButton.pack_forget()
+    netButton.pack_forget()
+    trigButton.pack_forget()
+    expoButton.pack_forget()
+    doneExpoButton.pack()
+    expoimgpic.pack()
+
 volSphere = tk.Button(text = 'The Volume of a Sphere', height = 4, width = 30, command = ifVolSphereClick)
 volPyrandCone = tk.Button(text = "The Volume of a Pyramid/Cone", height = 4, width = 30, command = ifVolPyrandConeClick)
 volPrism = tk.Button(text = "The Volume of a Prism", height = 4, width = 30, command = ifVolPrismClick)
@@ -376,6 +393,8 @@ geoEqEllipseButton = tk.Button(text = 'Equation of an Ellipse', height = 4, widt
 trig1Button = tk.Button(text = 'Trigonometry Part 1', height = 4, width = 30, command = ifTrig1ButtonClick)
 trig2Button = tk.Button(text = 'Trigonometry Part 2', height = 4, width = 30, command = ifTrig2ButtonClick)
 trig3Button = tk.Button(text = 'Trigonometry Part 3', height = 4, width = 30, command = ifTrig3ButtonClick)
+expoButton = tk.Button(text = 'Exponents', height = 4, width = 30, command = ifExpoButtonClick)
+
 def ifMenuClick():
     volumeButton.pack_forget()
     geoButton.pack_forget()
@@ -405,12 +424,14 @@ def ifMenuClick():
     trig1imgpic.pack_forget()
     trig2imgpic.pack_forget()
     trig3imgpic.pack_forget()
+    expoimgpic.pack_forget()
     volumeButton.pack()
     geoButton.pack()
     funcandEqButton.pack()
     areaButton.pack()
     netButton.pack()
     trigButton.pack()
+    expoButton.pack()
 
 def ifStartClick():
     volumeButton.pack()
@@ -419,6 +440,7 @@ def ifStartClick():
     areaButton.pack()
     netButton.pack()
     trigButton.pack()
+    expoButton.pack()
     startButton.pack_forget()
 
 def ifVolumeClick():
