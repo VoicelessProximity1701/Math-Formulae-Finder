@@ -124,6 +124,13 @@ def ifDoneTrigButtonClick():
 def ifDoneExpoClick():
     expoimgpic.pack_forget()
     doneExpoButton.pack_forget()   
+    volumeButton.pack()
+    geoButton.pack()
+    funcandEqButton.pack()
+    areaButton.pack()
+    netButton.pack()
+    trigButton.pack()
+    expoButton.pack()
 
 doneVolButton = tk.Button(text = 'Done', height = 4, width = 30, command = ifDoneVolButtonClick)
 doneGeoButton = tk.Button(text = 'Done', height = 4, width = 30, command = ifDoneGeoButtonClick)
