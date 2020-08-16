@@ -602,6 +602,19 @@ def ifnet1Click():
     net1Button.pack_forget()
     net2Button.pack_forget()
     net3Button.pack_forget()
+    net1imgpic.pack()
+
+def ifnet2Click():
+    net1Button.pack_forget()
+    net2Button.pack_forget()
+    net3Button.pack_forget()
+    net2imgpic.pack()
+
+def ifnet3Click():
+    net1Button.pack_forget()
+    net2Button.pack_forget()
+    net3Button.pack_forget()
+    net3imgpic.pack()
 
 
 
@@ -694,6 +707,9 @@ def ifMenuClick():
     areaCircleForm.pack_forget()
     areaConeForm.pack_forget()
     areaRectForm.pack_forget()
+    net1imgpic.pack_forget()
+    net2imgpic.pack_forget()
+    net3imgpic.pack_forget()
     volumeButton.pack()
     geoButton.pack()
     funcandEqButton.pack()
@@ -785,6 +801,10 @@ def ifNetClick():
     trigButton.pack_forget()
     expoButton.pack_forget()
     radButton.pack_forget()
+    net1Button.pack()
+    net2Button.pack()
+    net3Button.pack()
+    
 def ifTrigClick():
     volumeButton.pack_forget()
     geoButton.pack_forget()
