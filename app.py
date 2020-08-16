@@ -777,6 +777,8 @@ trigButton = tk.Button(text = "Trigonometry", height = 4, width = 30, command = 
 expoButton = tk.Button(text = 'Exponents', height = 4, width = 30, command = ifExpoButtonClick)
 radButton = tk.Button(text = 'Radicals', height = 4, width = 30, command = ifRadButtonClick)
 
+exitFormCalc.pack()
+
 menuEntry = tk.Button(text = "Menu", height = 4, width = 30, command = ifMenuClick)
 menuEntry.pack()
 
@@ -785,8 +787,6 @@ workingOut.pack()
 
 startButton = tk.Button(text = "Start", height = 4, width = 30, command = ifStartClick)
 startButton.pack()
-
-exitFormCalc.pack()
 
 parent.mainloop()
 
