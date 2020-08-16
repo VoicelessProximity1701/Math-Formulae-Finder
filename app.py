@@ -50,6 +50,12 @@ areaConeimg = tk.PhotoImage(file = '/Volumes/Samsung T5/Math Formulae Finder/ima
 areaSphereimg = tk.PhotoImage(file = '/Volumes/Samsung T5/Math Formulae Finder/images/sphere.png')
 areaTriimg = tk.PhotoImage(file = '/Volumes/Samsung T5/Math Formulae Finder/images/triangle.png')
 areaRhomimg = tk.PhotoImage(file = '/Volumes/Samsung T5/Math Formulae Finder/images/rhombus.png')
+net1img = tk.PhotoImage(file = '/Volumes/Samsung T5/Math Formulae Finder/images/net1.png')
+net2img = tk.PhotoImage(file = '/Volumes/Samsung T5/Math Formulae Finder/images/net2.png')
+net3img = tk.PhotoImage(file = '/Volumes/Samsung T5/Math Formulae Finder/images/net3.png')
+net1imgpic = tk.Button(image = net1img)
+net2imgpic = tk.Button(image = net2img)
+net3imgpic = tk.Button(image = net3img)
 areaSqimgpic = tk.Button(image = areaSqimg)
 areaRectimgpic = tk.Button(image = areaRectimg)
 areaCircleimgpic = tk.Button(image = areaCircleimg)
@@ -592,6 +598,13 @@ def ifRadButtonClick():
     doneRadButton.pack()
     radicalimgpic.pack()
 
+def ifnet1Click():
+    net1Button.pack_forget()
+    net2Button.pack_forget()
+    net3Button.pack_forget()
+
+
+
 volSphere = tk.Button(text = 'The Volume of a Sphere', height = 4, width = 30, command = ifVolSphereClick)
 volPyrandCone = tk.Button(text = "The Volume of a Pyramid/Cone", height = 4, width = 30, command = ifVolPyrandConeClick)
 volPrism = tk.Button(text = "The Volume of a Prism", height = 4, width = 30, command = ifVolPrismClick)
@@ -621,6 +634,10 @@ areaSphere = tk.Button(text = 'Area of a Sphere', height = 4, width = 30, comman
 trig1Button = tk.Button(text = 'Trigonometry Part 1', height = 4, width = 30, command = ifTrig1ButtonClick)
 trig2Button = tk.Button(text = 'Trigonometry Part 2', height = 4, width = 30, command = ifTrig2ButtonClick)
 trig3Button = tk.Button(text = 'Trigonometry Part 3', height = 4, width = 30, command = ifTrig3ButtonClick)
+net1Button = tk.Button(text = 'Nets 1', height = 4, width = 30, command = ifnet1Click)
+net2Button = tk.Button(text = 'Nets 2', height = 4, width = 30, command = ifnet2Click)
+net3Button = tk.Button(text = 'Nets 3', height = 4, width = 30, command = ifnet3Click)
+
 
 def ifMenuClick():
     volumeButton.pack_forget()
