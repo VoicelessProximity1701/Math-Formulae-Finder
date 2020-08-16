@@ -424,6 +424,7 @@ def ifAreaSqClick():
     areaTrap.pack_forget()
     doneAreaButton.pack()
     areaSqForm.pack()
+    areaSqimgpic.pack()
 
 def ifAreaRectClick():
     areaSq.pack_forget()
@@ -437,6 +438,7 @@ def ifAreaRectClick():
     areaTrap.pack_forget()
     doneAreaButton.pack()
     areaRectForm.pack()
+    areaRectimgpic.pack()
 
 def ifAreaTriClick():
     areaSq.pack_forget()
@@ -450,6 +452,7 @@ def ifAreaTriClick():
     areaTrap.pack_forget()
     doneAreaButton.pack()
     areaTriForm.pack()
+    areaTriimgpic.pack()
 
 def ifAreaPolyClick():
     areaSq.pack_forget()
@@ -463,6 +466,7 @@ def ifAreaPolyClick():
     areaSphere.pack_forget()
     doneAreaButton.pack()
     areaPolyForm.pack()
+    areaPolyimgpic.pack()
 
 def ifAreaSphereClick():
     areaSq.pack_forget()
@@ -476,6 +480,7 @@ def ifAreaSphereClick():
     areaSphere.pack_forget()
     doneAreaButton.pack()
     areaSphereForm.pack()
+    areaSphereimgpic.pack()
 
 def ifAreaTrapClick():
     areaSq.pack_forget()
@@ -489,7 +494,7 @@ def ifAreaTrapClick():
     areaSphere.pack_forget()
     doneAreaButton.pack()
     areaTrapForm.pack()
-
+    areaTrapimgpic.pack()
 
 def ifAreaConeClick():
     areaSq.pack_forget()
@@ -503,6 +508,7 @@ def ifAreaConeClick():
     areaSphere.pack_forget()
     doneAreaButton.pack()
     areaConeForm.pack()
+    areaConeimgpic.pack()
 
 def ifAreaCircleClick():
     areaSq.pack_forget()
@@ -516,6 +522,7 @@ def ifAreaCircleClick():
     areaSphere.pack_forget()
     doneAreaButton.pack()
     areaCircleForm.pack()
+    areaCircleimgpic.pack()
 
 def ifAreaRhomClick():
     areaSq.pack_forget()
@@ -529,6 +536,7 @@ def ifAreaRhomClick():
     areaSphere.pack_forget()
     doneAreaButton.pack()
     areaRhomForm.pack()
+    areaRhomimgpic.pack()
 
 def ifTrig1ButtonClick():
     trigButton.pack_forget()
